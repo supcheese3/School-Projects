@@ -1,0 +1,323 @@
+/*
+	Student Name: Nathan Williamson
+	File Name: styles.css
+	Date: 08/20/2021
+*/
+
+/*CSS Reset*/ 
+body, header, nav, footer, img, h1, h2, nav ul, nav li, nav li a, main, main p, article, form, fieldset, fieldset legend, input, footer p, footer a, figure, figcaption, table, th, td, tr{
+	margin: 0; 
+	padding: 0; 
+	border: 0;
+}
+
+/*Style rule for body and image*/
+body { 
+	background-color:  #ffffff;
+}
+
+img { 
+	max-width: 100%; 
+	/*display: block;
+	box-shadow: 10px 10px 5px grey;*/
+}
+header{
+	background-color: grey;
+}
+/*Style rule for header content*/
+h1 {
+	text-shadow: 2px 2px #ccc;
+	text-align: center;
+	font-size: 3em;
+	font-family: 'Roboto Mono', monospace, serif;
+	/*padding-top: 20%;*/
+}
+
+h2{
+	text-align: center;
+	font-size: 2em;
+    font-family: 'Roboto Mono', monospace, serif;
+}
+
+/*Style rules for navigation area*/
+nav {
+    background-color:  #d57d1f;
+}
+
+nav ul { 
+	margin: 0;
+	background-color: #b9b9b9;
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 3.5em;
+} 
+
+nav li a {  
+	display: block;
+	color: #000000;
+	text-align: center;
+	padding: 15px 40px;
+	text-decoration: none;	
+}
+
+/*Style rules for main content*/
+main {
+	padding: 2%;
+	font-family: Geneva, Arial, sans-serif;
+	overflow: auto;
+}
+
+main p {
+	font-size: 1.25em;
+	float: left;
+	padding-left: 2%;
+	padding-bottom: 5%;
+}
+/*Style rule for form*/
+fieldset {
+	margin-bottom: 2%;
+}
+
+input{
+	margin-bottom: 2%;
+}
+
+
+fieldset legend{
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+label{
+	display: block;
+	padding-top: 3%;
+}
+
+.btn{
+	border: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	padding: 5%;
+	background-color: #003399;
+	font-size: 1.25em;
+	border-radius: 10px;
+	color: #fff;
+}
+
+/* Style rule for table*/
+table{
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 5px grey;
+}
+
+table, tr, th, td{
+  border-collapse: collapse;
+  padding: 2%;
+}
+
+th, td{
+  border: 1px solid #000000;
+}
+
+td{
+	text-align: center;
+}
+
+tr:nth-child(odd){
+	background-color: #95A5A6;
+}
+
+/*Style rule for table caption*/
+caption{
+  font-size: 2em;
+  padding: 2%;
+  margin-top: 2%;
+  /*color: #17202A;*/
+}
+
+figcaption{
+	text-align: left;
+}
+
+.pictext{
+	text-align:center;
+	padding-top: 2%;
+}
+/*Style rule for class pictext in about.html*/ 
+.pictextabout{
+	text-align:center;
+	padding-top: 2%;
+	padding-right: 10%;
+}
+
+/*Style rule for grid*/
+/*.grid{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+}
+*/
+#about h3 {
+	font-family: Verdana, Arial, sans-serif;
+	/*color:  #17202A;*/
+}
+
+#form{
+	width: 90%;
+	background-color: #A6ACAF;
+	padding: 2%;
+	border: 2px solid black;
+}
+
+
+.corner {
+  border-radius: 300px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+/*Sytle rules for footer content*/
+
+footer {
+	text-align: left;
+	font-size: 0.85em;
+	background-color: #b9b9b9;
+	color: #000000;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 2%;
+	padding-right: 0%;
+}
+
+footer p {
+	color: #000000;
+	text-decoration: none;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #0055ff;
+}
+
+/*Media Query for Mobile Viewport*/
+
+/*hide tablet-desktop content*/
+	.tablet-desktop {
+		display: none;
+	}
+	
+	.grid{
+		display: grid;
+		grid-gap: 10px;
+	}
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 481px){
+	.tablet-desktop {
+		display: block;
+		padding-left: 5%;
+	}
+	/*Tablet viewport grid*/
+	.grid{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	}
+	/*Style rules for article*/
+	article{
+		padding: 2%;
+	}
+	
+	article p{
+		width: 80%;
+		text-align: left;
+		padding-top: 1%;
+	}
+	article h2{
+		text-align: left;
+	}
+	article h3{
+		text-align: left;
+	}
+
+	article ul{
+		text-align: left;
+	}
+	
+	/* Tablet Viewport: Style rule nav area*/
+	nav li {
+		display: inline-block;
+		margin: 0.2%;
+		font-size: 1.5em;
+	}
+	nav li a {
+		padding: 0.1em 1em;
+	}
+	
+	/*Tablet Viewport: Style rule form*/
+	form{
+		font-size: 18px;
+		width: 80%;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	/*.form-grid{
+		display: grid;
+		/*grid-template-columns: auto;
+		grid-gap: 20px;
+	}*/
+
+	.btn{
+		
+		padding: 2%;
+	}
+	
+}
+
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width: 900px){
+	
+	/* Desktop Viewport: Style rule header*/
+	/*header{
+		float: top;
+	}*/
+	
+	/* Desktop Viewport: Style rule for nav*/
+	
+	nav ul {
+		text-align: left;
+	}
+	
+	nav li {
+		border-radius: 0;
+	}
+	
+	nav li a {
+		display: inline-block;
+		padding: 0.7em;
+	}
+	
+	nav li a:hover {
+		color: #000000;
+		background-color: #d8d8d8;
+	}
+}
