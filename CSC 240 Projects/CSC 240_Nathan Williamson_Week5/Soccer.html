@@ -1,0 +1,70 @@
+<!--
+	Student Name: Nathan Williamson
+	File Name: Soccer.html
+	Date: 09/29/2021
+-->
+
+<html>
+
+<head>
+
+<title>Soccer League counter</title>
+	<!--<link rel="stylesheet" href="css/style.css">-->
+
+		<script type="text/javascript">
+			function playerButton() {
+				<!-- Gets how many players the user needs to input -->
+				var getPlayers = document.querySelector("#players").value 
+				var players = parseInt(getPlayers);
+				<!-- Uses players to count how many more that need to be inputed. -->
+				var playersLeft = players;
+				<!-- Making variables for junior, intermediate, senior, and unable team leagues.-->
+				var junior = 0;
+				var intermediate = 0;
+				var senior = 0;
+				var unable = 0;
+				<!-- For loop to go through the players that were inputed from the textbox-->
+				for(i = 0; i < players; i++){ 
+				<!-- Prompts the user to enter the age of the players -->
+					var age = parseInt(prompt("How old are your players? " + "(Players left "+playersLeft +")", " "));
+					playersLeft--;
+				<!-- IF statement to determine soccer team league -->
+					if(age >= 4 && age <= 7){
+					<!-- Counts the junior if conditions are met -->
+						junior++;
+						
+					} else if(age >= 8 && age <= 11){
+					<!-- Counts the intermediate if conditions are met -->
+						intermediate++;
+					
+					} else if(age >= 12 && age <= 15){
+					<!-- Counts the senior if conditions are met -->
+						senior++;
+						
+					} else {
+					<!-- Counts the players that are unable to play if conditions are met -->
+						unable++;
+						
+					}
+				
+				}
+				<!-- Displays all the info on the webpage -->
+				document.write("Junior League (ages 4-7): " + junior + "<br/>");
+				document.write("Intermediate League (ages 8-11): " + intermediate + "<br/>");
+				document.write("Senior League (ages 12-15): " + senior + "<br/>");
+				document.write("Unable to play: " + unable +  "<br/>");
+				document.write("Total players: " + (players - unable) + "<br/>");
+				document.write("Total players signed up: " + players);
+			}	
+		</script>
+</head>
+
+<body>
+	<center>
+		<h1>How many players</h1>
+		<input type="text" placeholder="Enter number of players" id = "players"/></br>
+		<input type="button" value="Enter players" onclick="playerButton()"/>
+	</center>
+</body>
+
+</html>

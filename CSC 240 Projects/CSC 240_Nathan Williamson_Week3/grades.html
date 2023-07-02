@@ -1,0 +1,51 @@
+<!--
+	Student Name: Nathan Williamson
+	File Name: grades.html
+	Date: 09/11/2021
+-->
+
+<html>
+
+<head>
+
+<title>Grade Converter</title>
+	<!--<link rel="stylesheet" href="css/style.css">-->
+
+		<script type="text/javascript">
+			function clicked() {
+				<!-- gets the grade from the input -->
+				var gradeTotal = document.querySelector("#average").value;
+				var letterGrade = "";
+				var average = parseFloat(gradeTotal);
+				<!-- IF statement to determine grade -->
+				if(average < 60){
+				<!-- Prints out F if grade is below 60 -->
+					letterGrade = "F";
+				} else if (average <= 69.5 && average>= 60){
+				<!-- Prints out D if grade is between 60 and 69.5 -->
+					letterGrade = "D";
+				} else if (average <= 79.5 && average >= 69.6){
+				<!-- Prints out C if grade is between 69.6 and 79.5 -->
+					letterGrade = "C";
+				} else if (average <= 89.5 && average >= 79.6){
+				<!-- Prints out B if grade is between 79.6 and 89.5 -->
+					letterGrade = "B";
+				} else if (average > 89.5){
+				<!-- Prints out A if grade is above 89.5 -->
+					letterGrade = "A";
+				}
+				window.alert("Your letter grade is: " + letterGrade);
+	
+			}	
+		</script>
+</head>
+
+<body>
+	<center>
+		<h1>Find out your letter grade</h1>
+		<input type="text" placeholder="Grade" id = "average"/></br>
+		<input type="button" value="Check your letter grade" onclick="clicked()"/>
+	</center>
+</body>
+
+</html>

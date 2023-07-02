@@ -1,0 +1,37 @@
+<!--
+	Student Name: Nathan Williamson
+	File Name: grades.html
+	Date: 09/11/2021
+-->
+
+<html>
+
+<head>
+
+<title>Grade Converter</title>
+	<!--<link rel="stylesheet" href="css/style.css">-->
+
+		<script type="text/javascript">
+			function clicked() {
+				var sum = 1; var i = 1; 
+				
+				while(i != 10) { 
+					i++; 
+					sum = sum + i;
+					
+				} 
+				document.write(sum);
+
+			}
+		</script>
+</head>
+
+<body>
+	<center>
+		<h1>Find out your letter grade</h1>
+		<!--<input type="text" placeholder="Grade" id = "average"/></br>-->
+		<input type="button" value="Check your letter grade" onclick="clicked()"/>
+	</center>
+</body>
+
+</html>

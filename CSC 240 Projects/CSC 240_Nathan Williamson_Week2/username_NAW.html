@@ -1,0 +1,35 @@
+<!--
+	Student Name: Nathan Williamson
+	File Name: username_NAW.html
+	Date: 09/08/2021
+-->
+
+<html>
+
+<head>
+
+<title>Student Register</title>
+	<!--<link rel="stylesheet" href="css/style.css">-->
+
+		<script type="text/javascript">
+		
+			function clicked() {
+	
+			var first = prompt("Enter your first name: ");
+			var last = prompt("Enter your last name: ");
+			var school = prompt("Enter your school's name: ");
+			var schoolusername = school.split(' ')[0];
+			document.write("Your username is: "+first.charAt(0)+last.charAt(0)+schoolusername);
+			}
+			
+		</script>
+</head>
+
+<body>
+	<center>
+		<input type="button" value="Create Username" onclick="clicked()"/>
+	</center>
+
+</body>
+
+</html>

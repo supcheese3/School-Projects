@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- 
+  Student Name: Nathan Williamson
+  File Name: donation.html
+  Date: 04/24/2022
+-->
+<html lang="en">
+	<head>
+ 
+		<title>Donating to Dreamland's</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">	
+
+	</head>
+	<body>
+
+		<header>
+			<div class="logo">
+				<img src="images/heart_3.gif" alt="heart logo">
+			</div>
+		</header>
+	
+		<nav>
+			<ul class="nav">
+				<li><a href="index.html">Home  </a></li>
+				<li><a href="about.html">About </a></li>
+				<li><a href="news.html">News</a></li> 
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>	
+			</ul>
+		</nav>
+		
+			<div class="donation-container">
+            
+				<div class="donation-box">
+					<div class="title">Donation Information</div>
+	            
+						<div class="fields">
+							<label for="firstName">First Name:</label>
+							<input type="text" id="firstName" name="firstName" placeholder="First Name"
+							onkeypress="return /[a-z]/i.test(event.key)"/>
+							<label for="lastName">Last Name:</label>
+							<input type="text" id="lastName" name="lastName" placeholder="Last Name"
+							onkeypress="return /[a-z]/i.test(event.key)"/>
+							<label for="emailInput">Email:</label>
+							<input type="email" id="emailInput" name="emailInput" placeholder="Email"/>
+							<label for="zipCode">Zip Code:</label>
+							<input type="text" id="zipCode" name="zipCode" placeholder="Zip Code"
+							oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+							<label for="cardNumber">Card Number:</label>
+							<input type="tel" pattern="[0-9]*" maxlength="16" id="cardNumber" name="cardNumber" placeholder="Card Number"/>
+							<!--oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>-->
+							<label for="expDate">Exp. Date:</label>
+							<input maxlength='5' type="text" id="expDate" placeholder="MM/YY" onkeyup="formatExpDate(event);"/>
+							<label for="cvc">CVC:</label>
+							<input type="text" id="cvc" name="cvc" placeholder="CVC" 
+							oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+						</div>
+					
+						<div class="amount">
+							<label for="amount" class="amountLabel">Enter Amount:</label>
+							<div class="button">$<input id="amount" name="amount" type="text" class="set-amount" placeholder=""
+												oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/></div>
+						</div>
+					
+						<div class="donate-button">
+							<button onclick="checkDonationForm()">Donate Now</button>
+						</div>
+				</div>
+			</div>	
+		<footer>
+			<p>Created by: Nathan Williamson</p>
+			<p>Art: Jennifer Williamson</p>
+			<p>Email: <a href="mailto:nwilliamson003@my.wilmu.edu" class="footer a">nwilliamson003@my.wilmu.edu</a></p>
+		</footer>
+
+	
+		<!--Javascript -->
+		<script src="script/donationScript.js"></script>
+	
+	</body>
+</html>

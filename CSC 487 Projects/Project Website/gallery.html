@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- 
+  Student Name: Nathan Williamson
+  File Name: gallery.html
+  Date: 04/24/2022
+-->
+<html lang="en">
+
+<head>
+
+  <title>Dreamland's: Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet"> 
+  
+
+</head>
+
+<body>
+  
+  <header>
+	<div class="logo">
+		<img src="images/heart_3.gif" alt="heart logo">
+	</div>
+  </header>
+
+  <nav>
+	<ul class="nav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>	
+		<li><a href="news.html">News</a></li> 
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="contact.html">Contact</a></li>	
+	</ul>
+  </nav>
+<!--Main content of the webpage-->
+  <main>
+	<div class="row">
+	
+		<div class="column">
+			<img src="images/dreamland's_cover_art_2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Cover art">
+		</div>
+		
+		<div class="column">
+			<img src="images/Character_Front_View.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Character front view">
+		</div>
+		
+		<div class="column">
+			<img src="images/Character_Back_View.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Character back view">
+		</div>
+	
+		<div class="column">
+			<img src="images/Character_Running.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Character running">
+		</div>
+	
+		<div class="column">
+			<img src="images/The_Shopkeeper.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Cat shopkeeper">
+		</div>
+		
+		<div class="column">
+			<img src="images/Boss.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="Boss character">
+		</div>
+		
+	</div>
+		
+	<div id="galleryModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+		
+			<div class="gallerySlides">
+				<div class="numberText">1 / 6</div>
+				<img src="images/dreamland's_cover_art_2.jpg" style="width:100%" alt="Cover art">
+			</div>
+		
+			<div class="gallerySlides">
+				<div class="numberText">2 / 6</div>
+				<img src = "images/Character_Front_View.jpg" style="width:100%" alt="Character front view">
+			</div>
+		
+			<div class="gallerySlides">
+				<div class="numberText">3 / 6</div>
+				<img src = "images/Character_Back_View.jpg" style="width:100%" alt="Character back view">
+			</div>
+		
+			<div class="gallerySlides">
+				<div class="numberText">4 / 6</div>
+				<img src = "images/Character_Running.jpg" style="width:100%" alt="Character running">
+			</div>
+		
+			<div class="gallerySlides">
+				<div class="numberText">5 / 6</div>
+				<img src = "images/The_Shopkeeper.jpg" style="width:100%" alt="Cat shopkeeper">
+			</div>
+		
+			<div class="gallerySlides">
+				<div class="numberText">6 / 6</div>
+				<img src = "images/Boss.jpg" style="width:100%" alt="Boss character">
+			</div>
+		
+			<!--Next/previous controls-->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+			<!--For the caption text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+		
+			<!--Thumbnail image control-->
+			<div class ="column">
+				<img class="demo" src="images/dreamland's_cover_art_2.jpg" onclick="currentSlide(1)" alt="Cover art">
+			</div>
+		
+			<div class ="column">
+				<img class="demo" src="images/Character_Front_View.jpg" onclick="currentSlide(2)" alt="Character front view">
+			</div>
+		
+			<div class ="column">
+				<img class="demo" src="images/Character_Back_View.jpg" onclick="currentSlide(3)" alt="Character back view">
+			</div>
+		
+			<div class ="column">
+				<img class="demo" src="images/Character_Running.jpg" onclick="currentSlide(4)" alt="Character running">
+			</div>
+		
+			<div class ="column">
+				<img class="demo" src="images/The_Shopkeeper.jpg" onclick="currentSlide(5)" alt="Cat shopkeeper">
+			</div>
+		
+			<div class ="column">
+				<img class="demo" src="images/Boss.jpg" onclick="currentSlide(6)" alt="Boss character">
+			</div>
+		</div>
+	</div>	
+  </main>
+ 
+  <footer>
+    <p>Created by: Nathan Williamson</p>
+	<p>Art: Jennifer Williamson</p>
+	<p>Email: <a href="mailto:nwilliamson003@my.wilmu.edu" class="footer a">nwilliamson003@my.wilmu.edu</a></p>
+  </footer>
+
+   <!--Javascript -->
+	<script src="script/GalleryScript.js"></script>
+	
+</body>
+
+</html>

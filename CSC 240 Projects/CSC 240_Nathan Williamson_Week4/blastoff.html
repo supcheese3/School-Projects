@@ -1,0 +1,41 @@
+<!--
+	Student Name: Nathan Williamson
+	File Name: blastoff.html
+	Date: 09/19/2021
+-->
+
+<html>
+
+<head>
+
+<title>BLAST OFF!</title>
+	<!--<link rel="stylesheet" href="css/style.css">-->
+
+		<script type="text/javascript">
+			function countdown() {
+				<!-- Sets the image in HTML -->
+				var rocket = document.createElement("IMG");
+				rocket.setAttribute("src", "image/Rocket.gif");
+				rocket.setAttribute("width", "600");
+				rocket.setAttribute("height", "500");
+				rocket.setAttribute("alt", "Rocket");
+				
+				<!--Countdown for BLAST OFF! -->
+				for(i = 10; i >= 1; i--){
+					document.write(i + "<br>");
+					}
+				<!-- displays blast off and image after the countdown -->
+				document.write("BLASTOFF!" + "<br>");
+				document.body.appendChild(rocket);			
+			}
+							
+		</script>
+</head>
+
+<body id = "body" style = "text-align:center;">
+	<p id = "counting"></p>
+	<input type="button" value="start the countdown" onclick="countdown()"/>
+	
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!--
+	Student Name: Nathan Williamson
+	File Name: sign_in2.html
+	Date: 10/10/2021
+-->
+<html>
+<head>
+<title>Login and Registration Form</title>
+	<!--CSS style sheet-->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="login-page">
+	<div class="form">
+	<!-- To get input from user -->
+	<h1>Registration Form</h1>
+		<form name="myForm" onsubmit="formSubmitted()" action="/action_page.php" method="post" class="register-form">
+		<input type="text" id="fName" placeholder="First Name"/>
+		<input type="text" id="lName" placeholder="Last Name"/>
+		<input type="text" id="address" placeholder="Street Address"/>
+		<input type="text" id="city" placeholder="City"/>
+		<input type="text" id="state" placeholder="State"/>
+		<input type="text" id="zip_code" placeholder="Zip Code"/>
+		<input type="text" id="email" placeholder="Email Address"/>
+		<!--Made a pattern that checks for the phone number correct format--> 
+		<input type="tel"  id="phone" name="phone" placeholder="Phone Number (xxx)xxx-xxxx" pattern="\(\d{3}\)\d{3}-\d{4}" required/>
+		<input type="submit" value="Submit" id="button">
+		</form>
+	</div>
+	</div>
+
+	<script>
+		function formSubmitted(){
+			<!--Stores value that is inputted -->
+			var first_name = document.querySelector("#fName").value;
+			var last_name = document.querySelector("#lName").value; 
+			var street_address = document.querySelector("#address").value; 
+			var city = document.querySelector("#city").value; 
+			var state = document.querySelector("#state").value; 
+			var zip_code = document.querySelector("#zip_code").value; 
+			var email = document.querySelector("#email").value;
+			var phone = document.querySelector("#phone").value; 
+			<!-- Displays values on the document -->
+			document.write("Welcome, " + first_name +" "+ last_name + "<br/>");
+			document.write("Street address: " + street_address + "<br/>");
+			document.write("City: " + city + "<br/>");
+			document.write("State: " + state + "<br/>");
+			document.write("Zip code: " + zip_code + "<br/>");
+			document.write("Email: " + email + "<br/>");
+			document.write("Phone Number: " + phone + "<br/>");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,624 @@
+/*
+	Student Name: Nathan Williamson
+	File Name: styles.css
+	Date: 04/24/2022
+*/
+
+/*CSS Reset*/ 
+*{
+	margin: 0; 
+	padding: 0; 
+	border: 0;
+}
+
+/*Style rule for body and image*/
+body { 
+	background-color:  #eaddcc;
+}
+
+img { 
+	max-width: 100%; 
+	display: block;
+}
+
+header{
+	background-color: #946437;
+	text-align: center;
+}
+.logo{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 17%;
+}
+
+/*Style rule for header content*/
+h1 {
+	text-align: center;
+	font-size: 5em;
+	font-family: Geneva, monospace, serif;
+	text-shadow: 2px 2px grey;
+}
+
+h2{
+	text-align: center;
+	font-size: 2.5em;
+    font-family: Geneva, monospace, serif;
+}
+
+/*Style rules for navigation area*/
+.nav {
+    background-color: #301606;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.nav li {
+	display:inline;
+} 
+
+.nav a {
+	font-size: 1.5em;
+	display: inline-block;
+	color: white;
+	padding: 10px;
+	text-decoration: none;	
+}
+/*----------------------------------*/
+
+/*Style rules for main content*/
+main {
+	padding: 20px;
+	font-family: Geneva, Arial, sans-serif;
+}
+/*----------------------------------*/
+
+/*Purchase form*/
+fieldset {
+	margin-bottom: 2%;
+}
+
+input{
+	margin-bottom: 2%;
+}
+
+
+fieldset legend{
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+label{
+	display: block;
+	padding-top: 3%;
+}
+
+.btn{
+	border: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	padding: 5%;
+	background-color: #003399;
+	font-size: 1.5em;
+	border-radius: 10px;
+	color: #fff;
+}
+/*---------------------------*/
+
+/*Style rules for store*/
+.textFormat{
+	padding-left: 52%;
+	font-size: 2em;
+}
+.storeForm{
+	position: absolute;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	max-width: 650px;
+	margin: auto;
+	text-align: center;
+	left: 180px;
+	
+}
+
+.titleImage{
+	width: 50%;
+	padding-left: 25%;
+}
+
+.storeForm button{
+	border: none;
+	outline: 0;
+	padding: 12px;
+	width: 100%;
+	background-color: #946437;
+	font-size: 1.5em;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+}
+
+.storeForm button:hover{
+	background-color: #301606;
+	color: white;
+	cursor: pointer;
+}
+/*-------------------------*/
+
+.pictext{
+	position: absolute;
+	left: 350px;
+	text-align:center;
+	padding-top: 2%;
+}
+
+/*Style rule for grid*/
+.grid{
+	display: grid;
+}
+.isaacImage{
+	float:right;
+	padding-right: 30%;
+}
+.grid p{
+	font-size: 2em;
+	text-indent: 40px;
+}
+.grid .title{
+	width: 25%;
+}
+.grid h2 {
+	font-family: Geneva, monospace, serif;
+	/*color:  #17202A;*/
+	font-size: 1.8em;
+	padding-left: 1%;
+}
+
+/*Style rule for about page*/
+.aboutPictureSize {
+	float: left;
+	width: 90%;
+	box-shadow: 5px 5px 3px grey;
+}
+.aboutText{
+	padding-left: 2%;
+	
+}
+.aboutText h3{
+	font-size: 2.5em;
+}
+
+.aboutText p{
+	font-size: 2em;
+}
+
+/*Style for home page image*/
+.homePictureSize {
+	float: left;
+	width: 30%;
+	box-shadow: 5px 5px 3px grey;
+}
+/*Style for home page text*/
+.homeText{
+	float: left;
+	padding-left: 20px;
+}
+
+/*Style rules for gallery content*/
+.gallery{
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 180px;
+}
+.gallery:hover{
+	border: 1px solid #777;
+}
+
+.gallery img{
+	width: 100%;
+	height: auto;
+}
+
+.desc{
+	padding: 15px;
+	text-align: center;
+}
+/*-------------------------------*/
+
+/*Donation form style*/
+.donation-container {
+	height: 1000px;
+	font-family: Geneva, sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	
+}
+
+.donation-box {
+	width: 390px;
+	height: 650px;
+	background-color: #eaddcc;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.donation-box .title {
+	background-color: #946437;
+	width: 100%;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	color: white;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 18px;
+}
+
+.donation-box .donate-button Button{
+	background-color: #946437;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 18px;
+	bottom: 0px;
+	position: absolute;
+	cursor: pointer;
+	font-weight: 800;
+}
+
+.donation-box .donate-button:hover button:hover{
+	background-color: #301606;
+}
+
+.donation-box .fields {
+	width: 59%;
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 15px;
+}
+
+.donation-box .fields input {
+	width: 90%;
+	font-size: 17px;
+	padding: 10px;
+	border-radius: 4px;
+	border-width: 0px;
+	color: #5C5C5C;
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.donation-box .amount .amountLabel{
+	font-size: 30px;
+	font-family: 'Roboto Mono', sans-serif;
+	color: black;
+}
+.donation-box .amount {
+	width: 30%;
+	display: block;
+	position: absolute;
+	top: 60px;
+	right: 15px;
+}
+
+.donation-box .amount .button {
+	width: 100%;
+	background-color: #301606;
+	margin-bottom: 10px;
+	text-align: center;
+	color: white;
+	padding: 15px 0px 15px 0px;
+	border-radius: 4px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.donation-box .amount .button:hover {
+	background-color: #946437;
+}
+
+.donation-box .amount .button.selected {
+	background-color: #946437;
+}
+
+.donation-box .amount .button input {
+	min-width: 34px;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-family: 'Roboto Mono', sans-serif;
+	font-size: 20px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	border-bottom: 2px dashed white;
+}
+
+.set-amount {
+	max-width: 96px;
+}
+
+/*---------------------------*/
+
+/*Style rules for Gallery*/
+.row > .column {
+  padding: 10px 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.gallerySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*--------------------------*/
+
+/*Sytle rules for footer content*/
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: left;
+	font-size: 0.85em;
+	background-color: #301606;
+	color: #000000;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 2%;
+	padding-right: 0%;
+}
+
+footer p {
+	color: white;
+	text-decoration: none;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #0055ff;
+}
+
+/*Media Query for Mobile Viewport*/
+
+/*hide tablet-desktop content*/
+	.tablet-desktop {
+		display: none;
+	}
+	
+	.grid{
+		display: grid;
+		grid-gap: 10px;
+	}
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 481px){
+	.tablet-desktop {
+		display: block;
+		padding-left: 5%;
+	}
+	/*Tablet viewport grid*/
+	.grid{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	}
+	/*Style rules for article*/
+	article{
+		padding: 2%;
+	}
+	
+	article p{
+		width: 80%;
+		text-align: left;
+		padding-top: 1%;
+	}
+	article h2{
+		text-align: left;
+	}
+	article h3{
+		text-align: left;
+	}
+
+	article ul{
+		text-align: left;
+	}
+	
+	/* Tablet Viewport: Style rule nav area*/
+	nav li {
+		display: inline-block;
+		margin: 0.2%;
+		font-size: 1.5em;
+	}
+	nav li a {
+		padding: 0.1em 1em;
+	}
+	
+	/*Tablet Viewport: Style rule form*/
+	storeForm{
+		font-size: 18px;
+		width: 80%;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	/*.form-grid{
+		display: grid;
+		/*grid-template-columns: auto;
+		grid-gap: 20px;
+	}*/
+
+	.storeForm button{
+		
+		padding: 2%;
+	}
+	
+}
+
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width: 900px){
+	
+	/* Desktop Viewport: Style rule header*/
+	/*header{
+		float: top;
+	}*/
+	
+	/* Desktop Viewport: Style rule for nav*/
+	
+	nav ul {
+		text-align: left;
+	}
+	
+	nav li {
+		border-radius: 0;
+	}
+	
+	nav li a {
+		display: inline-block;
+		padding: 0.7em;
+	}
+	
+	nav li a:hover {
+		color: #000000;
+		background-color: #eaddcc;
+	}
+}
